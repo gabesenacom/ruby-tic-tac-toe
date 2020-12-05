@@ -1,6 +1,5 @@
 # frozen_string_literal: false
 
-require 'colorize'
 require_relative 'game_input'
 require_relative '../player/player'
 require_relative '../player/player_computer'
