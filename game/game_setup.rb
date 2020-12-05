@@ -39,7 +39,7 @@ class GameSetup
   end
 
   def init_format
-    puts "Now, choose your format: #{'O'.light_yellow} or #{'X'.light_white}"
+    puts "Now, choose your format: O or X"
     request(true, -> { puts 'Invalid format, try again.' }, %w[X O], ->(text) { text.upcase })
   end
 end

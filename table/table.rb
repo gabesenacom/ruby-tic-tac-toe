@@ -1,7 +1,5 @@
 # frozen_string_literal: false
 
-require 'colorize'
-
 # Table of tic tac toe game.
 # Here, has methods to check winner, update table, get table display and others.
 class Table
@@ -21,8 +19,7 @@ class Table
     puts '  | 1 | 2 | 3'
     grid.each_pair do |position, element|
       puts '-' * 15
-      format = element.join(' | ').gsub('O', 'O'.light_yellow)
-                      .gsub('X', 'X'.light_white)
+      format = element.join(' | ')
       puts "#{position} | #{format}"
     end
   end
